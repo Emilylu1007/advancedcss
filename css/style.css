@@ -1,0 +1,407 @@
+/*style.css*/
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #FFF6F6;
+    padding: 0;
+    margin:0;
+    margin-bottom: 20px;
+  }
+  
+  /* Shared background for both nav and hero section */
+  header{
+    background-image: url("photos/backgroundedit.png");
+    background-position: center;
+    background-size:cover;
+  }
+  .navigation .logo {
+    position: absolute;
+    top: 56px; 
+    left: 80px;
+  }
+  .navigation {
+    padding: 56px 80px 0px 80px;
+    text-align: right;
+    position:relative;
+  }
+  .inline-bloc{
+    display: inline-block;
+  }
+  .inline-bloc ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  } 
+  .inline-bloc li {
+    display: inline-block;
+    margin-left: 40px;
+    font-size: 16px;
+    color: #fff;
+  }
+  .hero {
+    text-align: center;
+    color:#fff;
+    padding-bottom: 80px;
+  }
+  
+  .hero .content {
+    color:#fff;
+    max-width: 658px;
+    margin-top: 150px;
+    margin-left: 240px;
+    margin: 0 auto;
+  }
+  .hero h1 {
+    font-size: 56px; 
+    margin-bottom: 36px; 
+  }
+  
+  .hero p {
+    font-size: 16px; 
+    line-height: 1.5; 
+    margin-bottom: 48px;
+  }
+
+  
+  button.primary {
+    background-color: #EAC773; 
+    color: black;
+    font-size: 16px;
+    padding: 16px 24px;
+    margin-right:24px;
+    border-radius: 8px; 
+    font-weight: medium;
+    width: 158px;
+    height: 56px;
+    border: 2px solid #EAC773;
+  }
+  
+  button.secondary {
+    background-color: transparent; 
+    color: #EAC773;
+    padding: 16px 24px;
+    width: 158px;
+    height: 56px;
+    font-size: 16px;
+    margin: 0;
+    border-radius: 8px; 
+    border: 2px solid #EAC773;
+    font-weight: medium;
+  }
+  /* Styles for the My Skills section */
+  .mySkills {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #FFF6F6;
+    margin-top: 56px;
+  }
+  .mySkills h1 {
+    font-size: 32px;
+    color: #0b0b0b;
+    font-weight: 600;
+    margin-bottom: -2px;
+  }
+  .mySkills p.skillsSub {
+    font-size: 16px;
+    color: #2d2d2d;
+    font-weight: 400;
+    padding-bottom: 32px;
+  }
+  .flexContainer{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    gap:2em;
+  }
+  .flexContainer div{
+    width: 30%;
+    background: #fff;
+    padding: 40px;
+    max-width: 416px;
+    height: 400px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: -20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  .flexContainer div img{
+    transform: scale(1.2);
+  }
+  .flexContainer div h3{
+    font-size: 24px;
+    color:#2d2d2d;
+    font-weight: 600;
+    padding-top: 32px;
+  }
+  .flexContainer div p{
+    font-size: 16px;
+    color:#0b0b0b;
+    font-weight: 400;
+    margin-top: -10px;
+    max-width: 330px;
+  }
+
+  /* styles for the my works sections*/
+  .myWorks {
+    padding: 50px 0;
+    background-color: #FFF6F6;
+}
+.myWorks h1{
+  text-align: center;
+  color:#0b0b0b;
+  font-weight: 600;
+  font-size: 32px;
+  padding-bottom: 48px;
+}
+.government{
+  display: grid;
+  text-align: left;
+  align-items: center;
+  margin-left: 104px;
+  margin-right: 104px;
+  justify-items: center;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows:550px 100px 100px 100px 100px 100px;
+  grid-template-areas: 
+    'image1 image2'
+    'projectName subheading'
+    'projectName details'
+    'projectName seeproject'
+}
+.workGrid img{
+  justify-content: center;
+  height: 550px;
+  width: 800px;
+  align-self: center;
+}
+.imageGovhome{
+  grid-area: image1;
+}
+.imageaja{
+  grid-area: image2;
+}
+.government h4{
+  grid-area: projectName;
+  justify-self: left;
+  padding-left: 32px;
+  font-weight: 600;
+  font-size: 80px;
+  color: #0b0b0b;
+  align-self:center;
+}
+.government h5{
+  grid-area: subheading;
+  justify-self: left;
+  font-weight: 700;
+  color: #044EC7;
+  font-size: 32px;
+  padding-left: 32px;
+  align-self: stretch;
+  padding-top: 40px;
+}
+.government p{
+  grid-area: details;
+  color: #2d2d2d;
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 32px;
+  justify-self: left;
+  padding-top: 32px;
+}
+.government button{
+  grid-area: seeproject;
+  justify-self: left;
+  background-color: #044EC7; 
+  color: white;
+  font-size: 16px;
+  padding: 16px 24px;
+  margin-right:24px;
+  border-radius: 8px; 
+  font-weight: medium;
+  width: 158px;
+  height: 56px;
+  border: 2px solid #044EC7;
+  margin-left: 32px;
+}
+
+.myWorks h3{
+  align-items: center;
+  text-align: center;
+  margin-top: -124px;
+  text-decoration: underline;
+  font-size: 32px;
+  color: #2d2d2d;
+  font-weight: 400;
+}
+
+  /* Styles for the Footer section */
+  footer {
+    background-color: #fff;
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+    margin-top: 88px;
+    margin-right: 160px;
+    margin-left: 160px;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); 
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-section {
+    text-align: left;
+    max-width: 520px; 
+    padding-left: 80px;
+    padding-top: 10px;
+}
+.left-section h2 {
+    font-size: 88px; 
+    color:black; 
+    margin-bottom: 10px; 
+    font-weight: 100;
+    margin-top: 40px;
+    line-height: 1;
+}
+
+.left-section p {
+    font-size: 24px;
+    color: #000;
+    font-weight: 600;
+    line-height: 1.5; 
+    margin-bottom: 20px; 
+}
+.right-section{
+  display:grid;
+  text-align: left;
+  align-items: center;
+  justify-items: left;
+  padding-top: 40px;
+  margin-left: -40px;
+  margin-right: 20px;
+  grid-gap: 1em 2em;
+  grid-template-columns:200px 100px 100px 100px;
+  grid-template-rows:20px 55px 20px 55px 96px;
+  grid-template-areas:
+    'name email email email'
+    'nameinput emailinput emailinput emailinput'
+    'message message message message'
+    'message1 message1 message1 message1'
+    'button instagram linkedin mail'
+
+}
+label[for="name"] {
+  grid-area: name;
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+
+}
+input[type="text"]{
+  grid-area: nameinput;
+  padding:12px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+label[for="email"]{
+  grid-area: email;
+}
+input[type="email"]{
+  grid-area: emailinput;
+  padding:12px 88px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+label[for="message"]{
+  grid-area: message;
+}
+input[type="message"]{
+  grid-area: message1;
+  padding:12px 208px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+.insta{
+  grid-area: instagram;
+}
+.link{
+  grid-area: linkedin;
+}
+.mail{
+  grid-area: mail;
+}
+
+.right-section button{
+  grid-area: button;
+  background-color: #EAC773; 
+  color: black;
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 8px; 
+  font-weight: medium;
+  width: 158px;
+  height: 56px;
+  border: 2px solid #EAC773;}
+
+footer img {
+    list-style: none;
+    padding: 0;
+    margin:40px;
+}
+
+.copyright {
+    background-color: transparent;
+    color: black;
+    padding: 20px 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+@media only screen and (max-width: 600px) {
+  .flexContainer {
+    flex-direction: column; 
+    margin: 20px; 
+    align-items: stretch; 
+  }
+
+  .flexContainer div {
+    width: 100%; 
+    margin-bottom: 20px; 
+  }
+  .government {
+    grid-template-columns: 1fr; 
+    margin-left: 20px;
+    margin-right: 20px;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas:
+      'image1'
+      'image2'
+      'projectName'
+      'subheading'
+      'details'
+      'seeproject';
+  }
+
+  .workGrid img {
+    width: 100%; 
+    height: auto; 
+  }
+
+  .government h4,
+  .government h5,
+  .government p,
+  .government button {
+    justify-self: center; 
+    padding-left: 0; 
+    text-align: center; 
+    margin-left: 0; 
+  }
+}
